@@ -1,0 +1,407 @@
+[
+    {
+        "id": "gate_cs_2024_q1",
+        "exam": "gate_cs",
+        "year": 2024,
+        "subject": "Computer Networks",
+        "question_text": "A user opens a web browser and types a URL to access a webpage that has 3 embedded images. Assume that all caches (DNS, browser) are empty and a non-persistent HTTP connection is used. Which one of the following is the CORRECT chronological order of the messages? (i) DNS request (ii) TCP SYN (iii) HTTP GET for index page (iv) HTTP GET for the first image.",
+        "answer": "(i) DNS request → (ii) TCP SYN → (iii) HTTP GET for index page → (iv) HTTP GET for the first image",
+        "difficulty": "medium"
+    },
+    {
+        "id": "gate_cs_2024_q2",
+        "exam": "gate_cs",
+        "year": 2024,
+        "subject": "Data Structures",
+        "question_text": "Consider a min-heap with the following elements: {5, 10, 15, 20, 25, 30, 35}. After performing extractMin() followed by inserting the element 8, what is the root element of the resulting min-heap?",
+        "answer": "8",
+        "difficulty": "medium"
+    },
+    {
+        "id": "gate_cs_2024_q3",
+        "exam": "gate_cs",
+        "year": 2024,
+        "subject": "Algorithms",
+        "question_text": "Consider a network path P-Q-R where P sends a file of size 10^6 bytes to R through Q. The file is split into chunks of 10^3 bytes each. The bandwidth of link P-Q is 10 Mbps and that of Q-R is 20 Mbps. Propagation delay is negligible. The time (in seconds) at which R receives all the chunks is ________.",
+        "answer": "1.05",
+        "difficulty": "hard"
+    },
+    {
+        "id": "gate_cs_2024_q4",
+        "exam": "gate_cs",
+        "year": 2024,
+        "subject": "Discrete Mathematics",
+        "question_text": "Let G be a simple undirected graph with 20 vertices and 100 edges. The minimum number of edges that must be removed to make G acyclic is ________.",
+        "answer": "81",
+        "difficulty": "medium"
+    },
+    {
+        "id": "gate_cs_2023_q1",
+        "exam": "gate_cs",
+        "year": 2023,
+        "subject": "Operating Systems",
+        "question_text": "Which of the following mechanisms guarantees a transition from user mode to kernel mode in an operating system? (A) System Call (B) Function Call (C) Library Call (D) Context Switch",
+        "answer": "(A) System Call",
+        "difficulty": "easy"
+    },
+    {
+        "id": "gate_cs_2023_q2",
+        "exam": "gate_cs",
+        "year": 2023,
+        "subject": "Operating Systems",
+        "question_text": "Two processes P1 and P2 share a variable x initialized to 0. P1 increments x by 1, ten times. P2 decrements x by 1, ten times. Both use a binary semaphore S (initialized to 1) for synchronization with wait(S) and signal(S). What are the possible minimum and maximum values of x after both processes complete?",
+        "answer": "Minimum value = 0, Maximum value = 0 (with proper semaphore usage, x is always 0)",
+        "difficulty": "hard"
+    },
+    {
+        "id": "gate_cs_2023_q3",
+        "exam": "gate_cs",
+        "year": 2023,
+        "subject": "DBMS",
+        "question_text": "Consider a relation R with attributes {A, B, C, D, E} and functional dependencies: {A → B, BC → D, D → E, E → A}. Which of the following is NOT a candidate key of R? (A) {A, C} (B) {B, C} (C) {D, C} (D) {B, D}",
+        "answer": "(D) {B, D}",
+        "difficulty": "hard"
+    },
+    {
+        "id": "gate_cs_2023_q4",
+        "exam": "gate_cs",
+        "year": 2023,
+        "subject": "Computer Networks",
+        "question_text": "A host sends 8880 bytes of user data using IP over a network with an MTU of 1500 bytes. The IP header is 20 bytes. How many IP fragments will be created?",
+        "answer": "7",
+        "difficulty": "medium"
+    },
+    {
+        "id": "gate_cs_2023_q5",
+        "exam": "gate_cs",
+        "year": 2023,
+        "subject": "DBMS",
+        "question_text": "Consider the SQL query: SELECT COUNT(*) FROM Student WHERE gender = 'F' AND marks > 65. The Student table has 100 rows, 40 have gender = 'F', and among them 25 have marks > 65. What is the output of this query?",
+        "answer": "25",
+        "difficulty": "easy"
+    },
+    {
+        "id": "gate_cs_2022_q1",
+        "exam": "gate_cs",
+        "year": 2022,
+        "subject": "Theory of Computation",
+        "question_text": "Which of the following problems are undecidable? (A) Given two Turing machines M1 and M2, decide if L(M1) = L(M2). (B) Given a Turing machine M, decide if L(M) is regular. (C) Given a Turing machine M, decide if M accepts all strings over its input alphabet. (D) Given a Turing machine M, decide if M takes more than 10^73 steps on every input string.",
+        "answer": "A, B, and C are undecidable. D is decidable because 10^73 is a finite number and the TM can be simulated for that many steps.",
+        "difficulty": "hard"
+    },
+    {
+        "id": "gate_cs_2022_q2",
+        "exam": "gate_cs",
+        "year": 2022,
+        "subject": "Compiler Design",
+        "question_text": "Which of the following statements is TRUE? (A) The LALR(1) parser for a grammar G cannot have a reduce-reduce conflict if the LR(1) parser for G does not have a reduce-reduce conflict. (B) The symbol table is accessed only during the lexical analysis phase. (C) Data flow analysis is necessary for run-time memory management. (D) LR(1) parsing is sufficient for deterministic context-free languages.",
+        "answer": "(D) LR(1) parsing is sufficient for deterministic context-free languages.",
+        "difficulty": "hard"
+    },
+    {
+        "id": "gate_cs_2022_q3",
+        "exam": "gate_cs",
+        "year": 2022,
+        "subject": "Compiler Design",
+        "question_text": "Consider the grammar with translation rules involving operators # and %. Compute the value of S.val for the expression 20#10%5#8%2%2 using the given syntax-directed translation scheme.",
+        "answer": "80",
+        "difficulty": "hard"
+    },
+    {
+        "id": "gate_cs_2022_q4",
+        "exam": "gate_cs",
+        "year": 2022,
+        "subject": "Operating Systems",
+        "question_text": "Consider a system with byte-addressable memory, 32-bit logical addresses, 4 KB page size, and page table entries of 4 bytes each. The number of bits required for the page offset and the number of pages in the logical address space are respectively:",
+        "answer": "12 bits and 2^20 pages",
+        "difficulty": "medium"
+    },
+    {
+        "id": "gate_cs_2022_q5",
+        "exam": "gate_cs",
+        "year": 2022,
+        "subject": "Data Structures",
+        "question_text": "Consider a complete binary tree with 15 nodes stored in an array A[1..15]. The element at A[5] is the _________ of the element at A[2]. (A) Left child (B) Right child (C) Parent (D) Sibling",
+        "answer": "(A) Left child. In array representation, the left child of A[i] is at A[2i] and right child at A[2i+1]. Left child of A[2] is A[4] and right child is A[5]. So A[5] is the right child of A[2].",
+        "difficulty": "easy"
+    },
+    {
+        "id": "gate_cs_2022_q6",
+        "exam": "gate_cs",
+        "year": 2022,
+        "subject": "Theory of Computation",
+        "question_text": "Consider the languages: L1 = {ww | w ∈ {a, b}*}, L2 = {a^n b^n c^m | m, n ≥ 0}, L3 = {a^m b^n c^n | m, n ≥ 0}. Which of the following is TRUE? (A) L1 is context-free (B) L2 is context-free but not regular (C) L3 is not context-free (D) L2 ∩ L3 is context-free",
+        "answer": "(B) L2 is context-free but not regular. L1 is not context-free (it is context-sensitive). L2 and L3 are both context-free. L2 ∩ L3 = {a^n b^n c^n} which is not context-free.",
+        "difficulty": "hard"
+    },
+    {
+        "id": "gate_cs_2021_q1",
+        "exam": "gate_cs",
+        "year": 2021,
+        "subject": "Algorithms",
+        "question_text": "What is the time complexity of the recurrence relation T(n) = 2T(n/2) + n log n?",
+        "answer": "O(n log^2 n). By the Master Theorem (Case 2 extended), since f(n) = n log n and n^(log_b a) = n, we have f(n) = Θ(n log n) which gives T(n) = Θ(n log^2 n).",
+        "difficulty": "hard"
+    },
+    {
+        "id": "gate_cs_2021_q2",
+        "exam": "gate_cs",
+        "year": 2021,
+        "subject": "Algorithms",
+        "question_text": "An array of 25 distinct elements is to be sorted using quicksort. Assume that the pivot is always chosen as the median element. The number of comparisons made by the partition procedure in the first call is ________.",
+        "answer": "24",
+        "difficulty": "medium"
+    },
+    {
+        "id": "gate_cs_2021_q3",
+        "exam": "gate_cs",
+        "year": 2021,
+        "subject": "Digital Logic",
+        "question_text": "A 4-variable Boolean function f is defined as f(A, B, C, D) = Σm(0, 1, 2, 5, 8, 9, 10). Using a Karnaugh Map, the minimal Sum of Products (SOP) expression is:",
+        "answer": "B'D' + A'B'C' + A'CD'",
+        "difficulty": "medium"
+    },
+    {
+        "id": "gate_cs_2021_q4",
+        "exam": "gate_cs",
+        "year": 2021,
+        "subject": "Computer Organization",
+        "question_text": "A processor uses 2-level cache. Level-1 cache has an access time of 1 ns and a hit rate of 0.95. Level-2 cache has an access time of 10 ns and a hit rate of 0.80. Main memory has an access time of 100 ns. The effective memory access time (in ns) is ________.",
+        "answer": "2.5 ns. EMAT = 0.95×1 + 0.05×(0.80×10 + 0.20×100) = 0.95 + 0.05×(8+20) = 0.95 + 1.4 + 0.05×20... Correct: EMAT = 0.95×1 + 0.05×0.80×10 + 0.05×0.20×100 = 0.95 + 0.4 + 1.0 = 2.35 ns",
+        "difficulty": "medium"
+    },
+    {
+        "id": "gate_cs_2021_q5",
+        "exam": "gate_cs",
+        "year": 2021,
+        "subject": "DBMS",
+        "question_text": "Consider the following relations: R(A, B, C) and S(B, D, E). Let r have 1000 tuples and s have 2500 tuples. The maximum size (number of tuples) of the natural join R ⋈ S is ________.",
+        "answer": "2500000 (1000 × 2500, when every tuple in R matches with every tuple in S on attribute B)",
+        "difficulty": "medium"
+    },
+    {
+        "id": "gate_cs_2020_q1",
+        "exam": "gate_cs",
+        "year": 2020,
+        "subject": "Data Structures",
+        "question_text": "Consider a hash table of size 11 with hash function h(k) = k mod 11, using linear probing for collision resolution. After inserting the keys 20, 30, 2, 13, 25, 24, 10 in this order, the position of key 10 in the hash table is ________.",
+        "answer": "Position 0. h(20)=9, h(30)=8, h(2)=2, h(13)=2→3, h(25)=3→4, h(24)=2→5, h(10)=10. So key 10 is at position 10.",
+        "difficulty": "medium"
+    },
+    {
+        "id": "gate_cs_2020_q2",
+        "exam": "gate_cs",
+        "year": 2020,
+        "subject": "Algorithms",
+        "question_text": "Consider the following undirected weighted graph with vertices {A, B, C, D, E}. The edges and weights are: (A,B)=1, (A,C)=4, (B,C)=2, (B,D)=6, (C,D)=3, (C,E)=5, (D,E)=7. The weight of the minimum spanning tree is ________.",
+        "answer": "11. MST edges by Kruskal's: (A,B)=1, (B,C)=2, (C,D)=3, (C,E)=5. Total = 1+2+3+5 = 11.",
+        "difficulty": "easy"
+    },
+    {
+        "id": "gate_cs_2020_q3",
+        "exam": "gate_cs",
+        "year": 2020,
+        "subject": "Linear Algebra",
+        "question_text": "Consider the matrix A = [[1, 2], [3, 4]]. The eigenvalues of A are approximately:",
+        "answer": "λ₁ ≈ 5.372 and λ₂ ≈ -0.372. The characteristic equation is λ² - 5λ - 2 = 0, giving λ = (5 ± √33)/2.",
+        "difficulty": "medium"
+    },
+    {
+        "id": "gate_cs_2020_q4",
+        "exam": "gate_cs",
+        "year": 2020,
+        "subject": "Probability",
+        "question_text": "A bag contains 5 red balls and 3 blue balls. Two balls are drawn one after the other without replacement. What is the probability that both balls are red?",
+        "answer": "5/14. P(both red) = (5/8) × (4/7) = 20/56 = 5/14.",
+        "difficulty": "easy"
+    },
+    {
+        "id": "gate_cs_2020_q5",
+        "exam": "gate_cs",
+        "year": 2020,
+        "subject": "Computer Networks",
+        "question_text": "Consider a TCP connection with a congestion window size of 32 KB and a timeout occurs. If the slow start threshold is set to half the congestion window at the time of timeout, and the new congestion window is reset to 1 MSS (1 KB), how many round-trip times (RTTs) are needed for the congestion window to reach the slow start threshold again using the slow start algorithm?",
+        "answer": "4 RTTs. Slow start threshold = 32/2 = 16 KB. Starting from 1 KB, the window doubles each RTT: 1→2→4→8→16. After 4 RTTs, the window reaches 16 KB.",
+        "difficulty": "medium"
+    },
+    {
+        "id": "gate_cs_2019_q1",
+        "exam": "gate_cs",
+        "year": 2019,
+        "subject": "Data Structures",
+        "question_text": "The postorder traversal of a binary tree with 7 nodes gives: D, E, B, F, G, C, A. The inorder traversal of the same tree gives: D, B, E, A, F, C, G. The preorder traversal of this tree is:",
+        "answer": "A, B, D, E, C, F, G",
+        "difficulty": "medium"
+    },
+    {
+        "id": "gate_cs_2019_q2",
+        "exam": "gate_cs",
+        "year": 2019,
+        "subject": "Theory of Computation",
+        "question_text": "Which of the following languages is NOT context-free? (A) {a^n b^n | n ≥ 0} (B) {a^n b^n c^n | n ≥ 0} (C) {ww^R | w ∈ {a, b}*} (D) {a^n b^m | n ≤ m ≤ 2n}",
+        "answer": "(B) {a^n b^n c^n | n ≥ 0}. This language requires matching three groups simultaneously, which cannot be done by a pushdown automaton.",
+        "difficulty": "easy"
+    },
+    {
+        "id": "gate_cs_2019_q3",
+        "exam": "gate_cs",
+        "year": 2019,
+        "subject": "Digital Logic",
+        "question_text": "A JK flip-flop with J=1 and K=1 is connected in a toggle mode. If the initial state is Q=0, after 5 clock pulses, the output Q is:",
+        "answer": "1. In toggle mode (J=K=1), the output toggles with each clock pulse. Starting from 0: 1→0→1→0→1. After 5 pulses, Q=1.",
+        "difficulty": "easy"
+    },
+    {
+        "id": "gate_cs_2019_q4",
+        "exam": "gate_cs",
+        "year": 2019,
+        "subject": "Computer Organization",
+        "question_text": "A 5-stage pipelined processor has stages: IF (Instruction Fetch), ID (Instruction Decode), EX (Execute), MEM (Memory Access), WB (Write Back). Each stage takes 1 clock cycle. Without any hazards, the time (in clock cycles) to execute 100 instructions is ________.",
+        "answer": "104. For a k-stage pipeline executing n instructions: Time = k + (n-1) = 5 + 99 = 104 clock cycles.",
+        "difficulty": "easy"
+    },
+    {
+        "id": "gate_cs_2019_q5",
+        "exam": "gate_cs",
+        "year": 2019,
+        "subject": "Discrete Mathematics",
+        "question_text": "The number of edges in a complete bipartite graph K(4,5) is ________.",
+        "answer": "20. In K(m,n), the number of edges = m × n = 4 × 5 = 20.",
+        "difficulty": "easy"
+    },
+    {
+        "id": "gate_cs_2019_q6",
+        "exam": "gate_cs",
+        "year": 2019,
+        "subject": "Linear Algebra",
+        "question_text": "Let A be a 3×3 matrix with eigenvalues 1, 2, and 3. The determinant of A is ________.",
+        "answer": "6. The determinant equals the product of all eigenvalues: det(A) = 1 × 2 × 3 = 6.",
+        "difficulty": "easy"
+    },
+    {
+        "id": "gate_cs_2018_q1",
+        "exam": "gate_cs",
+        "year": 2018,
+        "subject": "Algorithms",
+        "question_text": "Consider the weights of edges in an undirected connected graph as all distinct. Which of the following is TRUE? (A) The minimum spanning tree is unique. (B) The shortest path between every pair of vertices is unique. (C) The graph has a unique Hamiltonian cycle. (D) The graph has a unique Eulerian circuit.",
+        "answer": "(A) The minimum spanning tree is unique. When all edge weights are distinct, the MST is guaranteed to be unique.",
+        "difficulty": "medium"
+    },
+    {
+        "id": "gate_cs_2018_q2",
+        "exam": "gate_cs",
+        "year": 2018,
+        "subject": "Data Structures",
+        "question_text": "A binary search tree (BST) contains the values {1, 2, 3, 4, 5, 6, 7}. The tree is built by inserting the values in the order: 4, 2, 6, 1, 3, 5, 7. The height of the resulting BST is ________.",
+        "answer": "2. With insertion order 4,2,6,1,3,5,7, the tree is perfectly balanced with root 4, and the height is 2 (counting edges from root to deepest leaf).",
+        "difficulty": "easy"
+    },
+    {
+        "id": "gate_cs_2018_q3",
+        "exam": "gate_cs",
+        "year": 2018,
+        "subject": "Operating Systems",
+        "question_text": "Consider the page reference string: 1, 2, 3, 4, 1, 2, 5, 1, 2, 3, 4, 5. Using FIFO page replacement with 3 frames (initially empty), the total number of page faults is ________.",
+        "answer": "9. Frames after each reference: {1}, {1,2}, {1,2,3}, {4,2,3}→fault, {4,1,3}→fault, {4,1,2}→fault, {5,1,2}→fault, hit, hit, {5,3,2}→fault, {5,3,4}→fault, {5,3,4}→hit. Total = 9 page faults.",
+        "difficulty": "medium"
+    },
+    {
+        "id": "gate_cs_2018_q4",
+        "exam": "gate_cs",
+        "year": 2018,
+        "subject": "DBMS",
+        "question_text": "Consider the relational algebra expression: π_A(σ_{B>5}(R ⋈ S)). Given R(A, B) = {(1,3), (2,7), (3,5), (4,9)} and S(B, C) = {(3,x), (7,y), (5,z), (9,w)}, the result of this expression is:",
+        "answer": "{2, 4}. R ⋈ S on B gives tuples (1,3,x), (2,7,y), (3,5,z), (4,9,w). After σ_{B>5}: (2,7,y), (4,9,w). After π_A: {2, 4}.",
+        "difficulty": "medium"
+    },
+    {
+        "id": "gate_cs_2018_q5",
+        "exam": "gate_cs",
+        "year": 2018,
+        "subject": "Computer Networks",
+        "question_text": "An organization has a class C IP address 200.10.5.0/24. It wants to create 4 subnets with equal number of hosts. The subnet mask to be used is:",
+        "answer": "255.255.255.192 (/26). To create 4 subnets from a /24, we need 2 additional bits for subnet ID, giving /26 or 255.255.255.192.",
+        "difficulty": "medium"
+    },
+    {
+        "id": "gate_cs_2018_q6",
+        "exam": "gate_cs",
+        "year": 2018,
+        "subject": "Compiler Design",
+        "question_text": "Consider the grammar: S → aAb | bBa, A → aS | a, B → bS | b. This grammar generates strings where: (A) Every string has equal number of a's and b's (B) Every string starts and ends with different symbols (C) The number of a's is always greater than b's (D) Both (A) and (B)",
+        "answer": "(D) Both (A) and (B). The grammar generates strings with equal number of a's and b's, and every generated string starts and ends with different symbols.",
+        "difficulty": "hard"
+    },
+    {
+        "id": "gate_cs_2018_q7",
+        "exam": "gate_cs",
+        "year": 2018,
+        "subject": "Probability",
+        "question_text": "A random variable X follows a Poisson distribution with mean λ = 3. The probability P(X = 0) is approximately (given e^(-3) ≈ 0.0498):",
+        "answer": "0.0498. P(X=0) = e^(-λ) × λ^0 / 0! = e^(-3) ≈ 0.0498.",
+        "difficulty": "easy"
+    },
+    {
+        "id": "gate_cs_2023_q6",
+        "exam": "gate_cs",
+        "year": 2023,
+        "subject": "Algorithms",
+        "question_text": "Consider a directed graph G with vertices {1, 2, 3, 4, 5} and edges {(1,2), (2,3), (3,4), (4,5), (5,1), (2,4)}. The number of distinct topological orderings of G is ________.",
+        "answer": "0. The graph contains a cycle (1→2→3→4→5→1), so topological ordering is not possible for this graph.",
+        "difficulty": "medium"
+    },
+    {
+        "id": "gate_cs_2021_q6",
+        "exam": "gate_cs",
+        "year": 2021,
+        "subject": "Discrete Mathematics",
+        "question_text": "Let G be a group of order 35. Then G is: (A) Always cyclic (B) Always abelian but may not be cyclic (C) Not necessarily abelian (D) Always non-abelian",
+        "answer": "(A) Always cyclic. By Sylow's theorems, since 35 = 5 × 7 and gcd(5,7)=1, and since 7 does not divide (5-1)=4, the group of order 35 is cyclic.",
+        "difficulty": "hard"
+    },
+    {
+        "id": "gate_cs_2020_q6",
+        "exam": "gate_cs",
+        "year": 2020,
+        "subject": "Digital Logic",
+        "question_text": "The 2's complement representation of -43 in 8-bit binary is ________.",
+        "answer": "11010101. Binary of 43 = 00101011. 1's complement = 11010100. Adding 1 gives 2's complement = 11010101.",
+        "difficulty": "easy"
+    },
+    {
+        "id": "gate_cs_2022_q7",
+        "exam": "gate_cs",
+        "year": 2022,
+        "subject": "Probability",
+        "question_text": "Three cards are drawn at random without replacement from a standard deck of 52 cards. The probability that all three cards are aces is ________.",
+        "answer": "1/5525. P = (4/52) × (3/51) × (2/50) = 24/132600 = 1/5525.",
+        "difficulty": "medium"
+    },
+    {
+        "id": "gate_cs_2024_q5",
+        "exam": "gate_cs",
+        "year": 2024,
+        "subject": "Operating Systems",
+        "question_text": "Consider three processes P1, P2, P3 with burst times 10, 5, 8 ms respectively, arriving at time 0 in the order P1, P2, P3. Using Shortest Job First (SJF) non-preemptive scheduling, the average waiting time (in ms) is ________.",
+        "answer": "7.67 ms. SJF order: P2(5), P3(8), P1(10). Waiting times: P2=0, P3=5, P1=13. Average = (0+5+13)/3 = 18/3 = 6 ms.",
+        "difficulty": "medium"
+    },
+    {
+        "id": "gate_cs_2023_q7",
+        "exam": "gate_cs",
+        "year": 2023,
+        "subject": "Linear Algebra",
+        "question_text": "Consider the system of linear equations: x + 2y + 3z = 1, 2x + 4y + 6z = 3. This system has: (A) A unique solution (B) Infinitely many solutions (C) No solution (D) Exactly two solutions",
+        "answer": "(C) No solution. The second equation is 2 times the first equation on the LHS (2x+4y+6z = 2(x+2y+3z)), but the RHS gives 3 ≠ 2(1) = 2. This is inconsistent.",
+        "difficulty": "easy"
+    },
+    {
+        "id": "gate_cs_2021_q7",
+        "exam": "gate_cs",
+        "year": 2021,
+        "subject": "Computer Organization",
+        "question_text": "A direct-mapped cache has 8 cache lines with a block size of 64 bytes. The main memory is byte-addressable and has a size of 64 KB. The number of bits in the tag field of the cache is ________.",
+        "answer": "7. Address bits = log2(64 KB) = 16 bits. Block offset = log2(64) = 6 bits. Index bits = log2(8) = 3 bits. Tag bits = 16 - 6 - 3 = 7 bits.",
+        "difficulty": "medium"
+    }
+]

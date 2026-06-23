@@ -1,0 +1,272 @@
+[
+    {
+        "id": "gate_ece_2024_q1",
+        "exam": "gate_ece",
+        "year": 2024,
+        "subject": "Control Systems",
+        "question_text": "The open-loop transfer function of a unity negative feedback system is G(s) = 6 / [s(s+1)(s+2)]. The system is:",
+        "answer": "Marginally stable",
+        "difficulty": "medium"
+    },
+    {
+        "id": "gate_ece_2024_q2",
+        "exam": "gate_ece",
+        "year": 2024,
+        "subject": "Signals and Systems",
+        "question_text": "The transfer function of a discrete-time LTI system is given by H(z) = (2z² + 3) / [(z + 1/3)(z - 1/3)]. Which of the following statements is/are true? (i) The system is BIBO stable (ii) The impulse response h[n] has a finite initial value",
+        "answer": "Both statements (i) and (ii) are true; the system is stable since all poles are inside the unit circle",
+        "difficulty": "hard"
+    },
+    {
+        "id": "gate_ece_2024_q3",
+        "exam": "gate_ece",
+        "year": 2024,
+        "subject": "Analog Circuits",
+        "question_text": "In an ideal op-amp based Wien bridge oscillator, the condition for sustained oscillations requires the ratio R_f/R_1 to be equal to:",
+        "answer": "2",
+        "difficulty": "medium"
+    },
+    {
+        "id": "gate_ece_2024_q4",
+        "exam": "gate_ece",
+        "year": 2024,
+        "subject": "Electromagnetics",
+        "question_text": "A lossless transmission line of characteristic impedance Z₀ = 50 Ω is terminated with a load impedance Z_L. If the standing wave ratio (SWR) on the line is 3, the maximum impedance on the line is:",
+        "answer": "150 Ω (SWR × Z₀ = 3 × 50)",
+        "difficulty": "medium"
+    },
+    {
+        "id": "gate_ece_2024_q5",
+        "exam": "gate_ece",
+        "year": 2024,
+        "subject": "Electronic Devices",
+        "question_text": "In a MOSFET-based common-source amplifier with a drain resistance R_D = 10 kΩ and transconductance g_m = 2 mA/V, the magnitude of small-signal voltage gain |V_out/V_in| is:",
+        "answer": "20 (g_m × R_D = 2 × 10⁻³ × 10 × 10³ = 20)",
+        "difficulty": "easy"
+    },
+    {
+        "id": "gate_ece_2023_q1",
+        "exam": "gate_ece",
+        "year": 2023,
+        "subject": "Signals and Systems",
+        "question_text": "The Fourier transform of the signal x(t) = e^(-t²) is:",
+        "answer": "√π · e^(-π²f²), which is also a Gaussian function (the Fourier transform of a Gaussian is a Gaussian)",
+        "difficulty": "medium"
+    },
+    {
+        "id": "gate_ece_2023_q2",
+        "exam": "gate_ece",
+        "year": 2023,
+        "subject": "Signals and Systems",
+        "question_text": "A strictly band-limited signal m(t) has a bandwidth B and energy E. The energy of the signal m(t)·cos(ω₀t), where ω₀ = 2π(10B), is:",
+        "answer": "E/2 (by Parseval's theorem, modulation by a cosine splits the energy equally into two halves)",
+        "difficulty": "hard"
+    },
+    {
+        "id": "gate_ece_2023_q3",
+        "exam": "gate_ece",
+        "year": 2023,
+        "subject": "Communications",
+        "question_text": "A message signal m(t) = 2cos(2000πt) is used to amplitude modulate a carrier signal c(t) = 4cos(20000πt). The modulation index and the power efficiency of the AM signal are respectively:",
+        "answer": "Modulation index = 0.5, Power efficiency = 11.11% (η = μ²/(2+μ²) × 100 = 0.25/2.25 × 100)",
+        "difficulty": "medium"
+    },
+    {
+        "id": "gate_ece_2023_q4",
+        "exam": "gate_ece",
+        "year": 2023,
+        "subject": "Digital Circuits",
+        "question_text": "A 4-bit synchronous counter uses JK flip-flops. If the counter counts in the sequence 0, 1, 2, 3, 4, 5, 6, 7, 0, ..., the minimum number of combinational gates required to implement this counter is:",
+        "answer": "0 (a standard 3-bit binary up counter requires all J and K inputs tied to appropriate logic without extra gates for a natural binary count; for 4-bit counting 0-7 and repeating, a reset at 8 is needed — 1 AND gate for reset)",
+        "difficulty": "medium"
+    },
+    {
+        "id": "gate_ece_2023_q5",
+        "exam": "gate_ece",
+        "year": 2023,
+        "subject": "Engineering Mathematics",
+        "question_text": "The eigenvalues of the matrix A = [[2, 1], [0, 3]] are:",
+        "answer": "2 and 3 (eigenvalues of a triangular matrix are its diagonal elements)",
+        "difficulty": "easy"
+    },
+    {
+        "id": "gate_ece_2022_q1",
+        "exam": "gate_ece",
+        "year": 2022,
+        "subject": "Networks",
+        "question_text": "In the circuit shown, a dependent current source of value 2Vx is connected across a 5Ω resistor. If Vx is the voltage across the 5Ω resistor, and a 10V independent voltage source is in series with a 10Ω resistor, the current ix through the 5Ω resistor is:",
+        "answer": "The current ix = 2/3 A (obtained by applying KVL and substituting the dependent source relationship)",
+        "difficulty": "hard"
+    },
+    {
+        "id": "gate_ece_2022_q2",
+        "exam": "gate_ece",
+        "year": 2022,
+        "subject": "Electronic Devices",
+        "question_text": "In silicon at room temperature (T = 300K), the intrinsic carrier concentration is nᵢ = 1.5 × 10¹⁰ cm⁻³. A p-type silicon sample is doped with acceptor concentration Nₐ = 10¹⁷ cm⁻³. The minority carrier (electron) concentration is approximately:",
+        "answer": "2.25 × 10³ cm⁻³ (n = nᵢ²/Nₐ = (1.5×10¹⁰)²/10¹⁷)",
+        "difficulty": "easy"
+    },
+    {
+        "id": "gate_ece_2022_q3",
+        "exam": "gate_ece",
+        "year": 2022,
+        "subject": "Analog Circuits",
+        "question_text": "An ideal op-amp based inverting amplifier has R₁ = 10 kΩ and R_f = 100 kΩ. If the input voltage is 0.5 V, the output voltage is:",
+        "answer": "-5 V (Vout = -(R_f/R₁) × Vin = -(100/10) × 0.5 = -5 V)",
+        "difficulty": "easy"
+    },
+    {
+        "id": "gate_ece_2022_q4",
+        "exam": "gate_ece",
+        "year": 2022,
+        "subject": "Control Systems",
+        "question_text": "The characteristic equation of a feedback control system is s³ + 3s² + 5s + K = 0. Using the Routh-Hurwitz criterion, the range of K for the system to be stable is:",
+        "answer": "0 < K < 15 (from Routh array: first column elements must be positive, giving K > 0 and (15-K)/3 > 0)",
+        "difficulty": "medium"
+    },
+    {
+        "id": "gate_ece_2022_q5",
+        "exam": "gate_ece",
+        "year": 2022,
+        "subject": "Communications",
+        "question_text": "In a binary communication system, bit '1' is transmitted as A volts and bit '0' as -A volts. The channel adds white Gaussian noise with zero mean and variance σ². The optimum threshold for the maximum likelihood detector, assuming equally likely bits, is:",
+        "answer": "0 V (for equally likely symbols with symmetric signal constellation, the optimal threshold is the midpoint)",
+        "difficulty": "medium"
+    },
+    {
+        "id": "gate_ece_2021_q1",
+        "exam": "gate_ece",
+        "year": 2021,
+        "subject": "Signals and Systems",
+        "question_text": "A continuous-time signal x(t) has a bandwidth of 500 Hz. The signal y(t) = x(t) × x(t) is sampled. The minimum sampling frequency (Nyquist rate) required for y(t) is:",
+        "answer": "2000 Hz (multiplication in time domain is convolution in frequency domain, so bandwidth of y(t) = 2 × 500 = 1000 Hz, Nyquist rate = 2 × 1000 = 2000 Hz)",
+        "difficulty": "hard"
+    },
+    {
+        "id": "gate_ece_2021_q2",
+        "exam": "gate_ece",
+        "year": 2021,
+        "subject": "Electromagnetics",
+        "question_text": "The electric field of a uniform plane wave propagating in free space is E = 10 sin(ωt - βz) x̂ V/m. The average power density (Poynting vector) of the wave is:",
+        "answer": "0.1327 W/m² (Savg = E₀²/(2η₀) = 100/(2×377) ≈ 0.1327 W/m²)",
+        "difficulty": "medium"
+    },
+    {
+        "id": "gate_ece_2021_q3",
+        "exam": "gate_ece",
+        "year": 2021,
+        "subject": "Digital Circuits",
+        "question_text": "The Boolean function F(A,B,C,D) = Σm(0,1,2,5,8,9,10) is to be implemented using a minimum number of 2-input NAND gates. The minimum number of NAND gates required is:",
+        "answer": "The minimized expression is F = B'D' + A'C'D + A'B'D, which requires 4 NAND gates (after K-map simplification and NAND-NAND implementation)",
+        "difficulty": "hard"
+    },
+    {
+        "id": "gate_ece_2021_q4",
+        "exam": "gate_ece",
+        "year": 2021,
+        "subject": "Networks",
+        "question_text": "A two-port network has the transmission (ABCD) parameters: A = 4, B = 3Ω, C = 2S, D = 1. The input impedance (Z_in) when the output port is short-circuited is:",
+        "answer": "B/D = 3/1 = 3 Ω (when output is short-circuited, V₂ = 0, so Z_in = V₁/I₁ = B/D)",
+        "difficulty": "medium"
+    },
+    {
+        "id": "gate_ece_2021_q5",
+        "exam": "gate_ece",
+        "year": 2021,
+        "subject": "Engineering Mathematics",
+        "question_text": "The value of the contour integral ∮_C (z² + 1)/(z² - 1) dz, where C is the circle |z| = 2 traversed counterclockwise, is:",
+        "answer": "0 (by the residue theorem, the residues at z=1 and z=-1 are each 1, so the integral = 2πi(1+1) — but actually (z²+1)/(z²-1) has residues: at z=1, residue = (1+1)/(1+1)=1; at z=-1, residue = (1+1)/(-1-1)=-1; sum = 0, so integral = 0)",
+        "difficulty": "hard"
+    },
+    {
+        "id": "gate_ece_2020_q1",
+        "exam": "gate_ece",
+        "year": 2020,
+        "subject": "Networks",
+        "question_text": "In an RLC series circuit with R = 10Ω, L = 1H, and C = 0.01F, the circuit is excited by a unit step voltage source. The nature of the transient response is:",
+        "answer": "Underdamped (α = R/2L = 5, ω₀ = 1/√(LC) = 10, since α < ω₀, the response is underdamped)",
+        "difficulty": "medium"
+    },
+    {
+        "id": "gate_ece_2020_q2",
+        "exam": "gate_ece",
+        "year": 2020,
+        "subject": "Electronic Devices",
+        "question_text": "A silicon PN junction at room temperature has a built-in potential of 0.7V. If the doping concentrations are NA = 10¹⁸ cm⁻³ and ND = 10¹⁶ cm⁻³, the depletion width on the n-side compared to the p-side is:",
+        "answer": "100 times larger (depletion width ratio xn/xp = NA/ND = 10¹⁸/10¹⁶ = 100)",
+        "difficulty": "easy"
+    },
+    {
+        "id": "gate_ece_2020_q3",
+        "exam": "gate_ece",
+        "year": 2020,
+        "subject": "Analog Circuits",
+        "question_text": "A common-emitter BJT amplifier with a collector resistance RC = 4 kΩ has a voltage gain of -160. If the thermal voltage VT = 25 mV, the collector current IC is:",
+        "answer": "1 mA (|Av| = gm × RC = (IC/VT) × RC, so 160 = (IC/0.025) × 4000, IC = 1 mA)",
+        "difficulty": "medium"
+    },
+    {
+        "id": "gate_ece_2020_q4",
+        "exam": "gate_ece",
+        "year": 2020,
+        "subject": "Communications",
+        "question_text": "A superheterodyne receiver has an IF frequency of 455 kHz and a local oscillator frequency higher than the signal frequency. If the receiver is tuned to receive a station at 1000 kHz, the image frequency is:",
+        "answer": "1910 kHz (f_image = f_signal + 2×f_IF = 1000 + 2×455 = 1910 kHz)",
+        "difficulty": "medium"
+    },
+    {
+        "id": "gate_ece_2019_q1",
+        "exam": "gate_ece",
+        "year": 2019,
+        "subject": "Digital Circuits",
+        "question_text": "A 3-bit binary weighted DAC has a reference voltage of 7V. The analog output voltage when the digital input is 101 is:",
+        "answer": "5V (output = Vref × (b₂×2² + b₁×2¹ + b₀×2⁰)/(2³ - 1) = 7 × 5/7 = 5V)",
+        "difficulty": "easy"
+    },
+    {
+        "id": "gate_ece_2019_q2",
+        "exam": "gate_ece",
+        "year": 2019,
+        "subject": "Electromagnetics",
+        "question_text": "The divergence of the electric field E = 3x²ŷ x̂ + 2yz ŷ + xz² ẑ at the point (1, 1, 1) is:",
+        "answer": "The divergence ∇·E = ∂(3x²y)/∂x + ∂(2yz)/∂y + ∂(xz²)/∂z = 6xy + 2z + 2xz. At (1,1,1): 6(1)(1) + 2(1) + 2(1)(1) = 10",
+        "difficulty": "medium"
+    },
+    {
+        "id": "gate_ece_2019_q3",
+        "exam": "gate_ece",
+        "year": 2019,
+        "subject": "Control Systems",
+        "question_text": "A unity feedback system has an open-loop transfer function G(s) = K/[s(s+2)(s+4)]. The value of K at which the root locus crosses the imaginary axis is:",
+        "answer": "K = 48 (using Routh criterion on s³ + 6s² + 8s + K = 0, auxiliary equation at marginal stability gives K = 48)",
+        "difficulty": "hard"
+    },
+    {
+        "id": "gate_ece_2018_q1",
+        "exam": "gate_ece",
+        "year": 2018,
+        "subject": "Engineering Mathematics",
+        "question_text": "The rank of the matrix A = [[1, 2, 3], [2, 4, 6], [1, 1, 1]] is:",
+        "answer": "2 (Row 2 is twice Row 1, so after row reduction only 2 linearly independent rows remain)",
+        "difficulty": "easy"
+    },
+    {
+        "id": "gate_ece_2018_q2",
+        "exam": "gate_ece",
+        "year": 2018,
+        "subject": "Signals and Systems",
+        "question_text": "A continuous-time LTI system has an impulse response h(t) = e^(-2t)u(t). The output y(t) of this system for the input x(t) = e^(-t)u(t) is:",
+        "answer": "y(t) = (e^(-t) - e^(-2t))u(t) (obtained by convolution or using Laplace transform: Y(s) = 1/[(s+1)(s+2)] → partial fractions → inverse Laplace)",
+        "difficulty": "medium"
+    },
+    {
+        "id": "gate_ece_2018_q3",
+        "exam": "gate_ece",
+        "year": 2018,
+        "subject": "Networks",
+        "question_text": "In a circuit, the maximum power is transferred from source to load when the load impedance is the complex conjugate of the source impedance. If the source impedance is (3 + j4)Ω, the maximum power transferred to the load when the source voltage is 10V (rms) is:",
+        "answer": "10/6 ≈ 8.33 W — but correctly: P_max = |Vs|²/(8×Rs) = 100/(8×3) ≈ 4.17 W (maximum power transfer formula with complex impedances uses P = Vs²/(8Rs))",
+        "difficulty": "medium"
+    }
+]
