@@ -18,7 +18,7 @@ GATE | CAT | UPSC | IELTS | GRE
    ```
 4. **Environment Variables:**
    - Create a `.env` file in the root directory.
-   - Add your Anthropic API key: `ANTHROPIC_API_KEY=sk-ant-your-key-here`
+   - Add your any AI Provider API key:`GROQ_API_KEY=gsk_your_groq_api_key_here` or `OPENAI_API_KEY=sk-proj-your_openai_key_here` or `ANTHROPIC_API_KEY=sk-ant-api-your_anthropic_key_here`
 5. **Data Ingestion:**
    ```bash
    python scripts/ingest_pyqs.py
@@ -32,6 +32,12 @@ GATE | CAT | UPSC | IELTS | GRE
    ```bash
    streamlit run frontend/app.py
    ```
+
+### Alternatively, run with Docker
+```bash
+docker-compose up --build
+```
+This will start both the backend on port 8000 and the frontend on port 8501.
 
 ## Demo Script for Judges
 
