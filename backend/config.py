@@ -5,8 +5,8 @@ load_dotenv()
 
 # --- LLM (Groq Cloud) ---
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
-LLM_PRIMARY_MODEL = os.getenv("LLM_PRIMARY_MODEL", "llama-3.3-70b-versatile")
-LLM_FAST_MODEL = os.getenv("LLM_FAST_MODEL", "llama-3.1-8b-instant")
+LLM_PRIMARY_MODEL = os.getenv("LLM_PRIMARY_MODEL", "qwen/qwen3.8-27b")
+LLM_FAST_MODEL = os.getenv("LLM_FAST_MODEL", "qwen/qwen3.8-27b")
 LLM_MAX_TOKENS = int(os.getenv("LLM_MAX_TOKENS", "1500"))
 
 # --- Backend ---

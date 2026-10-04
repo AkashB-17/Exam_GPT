@@ -1,5 +1,5 @@
 from pydantic import BaseModel
-from typing import Optional, List
+from typing import Optional, List, Any
 
 class QueryRequest(BaseModel):
     exam: str
@@ -18,7 +18,7 @@ class QueryResponse(BaseModel):
     query_id: str
     answer: str
     module_used: str
-    citations: List[PYQCitation]
+    citations: List[Any]  # dicts with PYQCitation fields + optional user doc metadata
     confidence: float
 
 class FeedbackRequest(BaseModel):

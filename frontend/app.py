@@ -4,7 +4,7 @@ import os, sys
 # Make sure imports from frontend work
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from frontend.components import sidebar, exam_selector, query_input, response_card
+from frontend.components import sidebar, exam_selector, query_input, response_card, document_upload
 from frontend.utils.api_client import check_backend_health
 
 
@@ -445,6 +445,12 @@ def main():
 
     # Exam Selector
     exam_selector.render_exam_selector()
+
+    # Document Upload
+    with st.expander("📄 Upload Study Material (RAG)", expanded=False):
+        document_upload.render_document_upload()
+
+    st.markdown("---")
 
     # Query Input
     query_input.render_query_input()

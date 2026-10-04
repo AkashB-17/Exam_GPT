@@ -43,6 +43,18 @@ class PYQCache(Base):
     answer = Column(Text, nullable=True)
     difficulty = Column(String(10))
 
+class UploadedDocument(Base):
+    __tablename__ = "uploaded_documents"
+    
+    id = Column(String(36), primary_key=True, default=lambda: str(uuid.uuid4()))
+    filename = Column(String(255), nullable=False)
+    exam = Column(String(20), nullable=False)
+    file_size = Column(Integer, default=0)
+    num_chunks = Column(Integer, default=0)
+    status = Column(String(20), default="processing")  # processing, indexed, error
+    error_message = Column(Text, nullable=True)
+    created_at = Column(DateTime, default=datetime.utcnow)
+
 def init_db():
     Base.metadata.create_all(bind=engine)
 

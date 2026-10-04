@@ -44,22 +44,31 @@ def _render_confidence_meter(confidence: float):
 
 
 def _render_citations(citations: list):
-    """Render PYQ citations in styled cards."""
+    """Render PYQ and user document citations in styled cards."""
     if not citations:
         return
 
-    with st.expander(f"📚 Related Previous Year Questions ({len(citations)} found)", expanded=False):
+    with st.expander(f"📚 Related Sources ({len(citations)} found)", expanded=False):
         for citation in citations:
+            is_user_doc = citation.get('is_user_doc', False)
             exam_label = citation.get('exam', '').upper().replace('_', ' ')
             year = citation.get('year', '')
             subject = citation.get('subject', '')
             question_text = citation.get('question_text', '')
             answer = citation.get('answer', '')
+            source_file = citation.get('source_file', '')
+
+            if is_user_doc:
+                header_text = f"📄 USER DOC — {source_file}"
+                header_color = "#c084fc"
+            else:
+                header_text = f"{exam_label} {year} — {subject}"
+                header_color = "#818cf8"
 
             st.markdown(f"""
             <div class="citation-card">
-                <div class="citation-header">{exam_label} {year} — {subject}</div>
-                <div class="citation-question">{question_text}</div>
+                <div class="citation-header" style="color: {header_color};">{header_text}</div>
+                <div class="citation-question">{question_text[:300]}{'...' if len(question_text) > 300 else ''}</div>
                 {"<div class='citation-answer'><strong>Answer:</strong> " + answer + "</div>" if answer else ""}
             </div>
             """, unsafe_allow_html=True)

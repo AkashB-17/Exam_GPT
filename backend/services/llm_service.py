@@ -82,14 +82,19 @@ def generate(exam: str, question: str, module: str, retrieved_pyqs: List[Dict]) 
     # Use primary model for complex tasks, fast model for quick answers
     model = LLM_PRIMARY_MODEL if module == "writing_feedback" else LLM_FAST_MODEL
 
-    # Format PYQ context
+    # Format PYQ context (includes both PYQ and user doc results)
     pyq_context_lines = []
     for pyq in retrieved_pyqs:
-        ans = pyq.get('answer', '')
-        if not ans:
-            ans = 'Not provided'
-        pyq_context_lines.append(f"Q: {pyq.get('question_text', '')}\nA: {ans}")
-    pyq_context = "\n\n".join(pyq_context_lines) if pyq_context_lines else "No previous year questions available for this topic."
+        is_user_doc = pyq.get('is_user_doc', False)
+        if is_user_doc:
+            source_label = f"[User Document: {pyq.get('source_file', 'unknown')}]"
+            pyq_context_lines.append(f"{source_label}\n{pyq.get('question_text', '')}")
+        else:
+            ans = pyq.get('answer', '')
+            if not ans:
+                ans = 'Not provided'
+            pyq_context_lines.append(f"Q: {pyq.get('question_text', '')}\nA: {ans}")
+    pyq_context = "\n\n".join(pyq_context_lines) if pyq_context_lines else "No previous year questions or study material available for this topic."
 
     system_prompt = SYSTEM_PROMPTS.get(module, SYSTEM_PROMPTS["explainer"]).format(
         exam_display_name=exam_display_name

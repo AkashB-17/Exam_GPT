@@ -66,14 +66,19 @@ async def process_query(
     # 7. Format citations (strip internal _distance field)
     citations = []
     for pyq in retrieved_pyqs:
-        citations.append(PYQCitation(
+        citation = PYQCitation(
             id=pyq.get("id", ""),
             exam=pyq.get("exam", exam),
             year=pyq.get("year", 0),
             subject=pyq.get("subject", "Uncategorized"),
             question_text=pyq.get("question_text", ""),
             answer=pyq.get("answer", "")
-        ))
+        )
+        # Pass extra fields for user doc display
+        citation_dict = citation.model_dump()
+        citation_dict["is_user_doc"] = pyq.get("is_user_doc", False)
+        citation_dict["source_file"] = pyq.get("source_file", "")
+        citations.append(citation_dict)
 
     return QueryResponse(
         query_id=log_entry.id,

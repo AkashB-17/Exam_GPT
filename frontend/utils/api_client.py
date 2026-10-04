@@ -67,3 +67,62 @@ def check_backend_health() -> bool:
         return response.status_code == 200
     except Exception:
         return False
+
+
+# ─── Document Upload APIs ───────────────────────────────────────
+
+
+def upload_document(exam: str, file_bytes: bytes, filename: str) -> dict:
+    """Upload a document for RAG indexing."""
+    url = f"{BACKEND_URL}/api/documents/upload"
+    try:
+        files = {"file": (filename, file_bytes)}
+        data = {"exam": exam}
+        response = requests.post(url, files=files, data=data, timeout=120)
+        response.raise_for_status()
+        return response.json()
+    except requests.HTTPError as e:
+        try:
+            detail = e.response.json().get("detail", str(e))
+        except Exception:
+            detail = str(e)
+        return {"error": detail}
+    except requests.ConnectionError:
+        return {"error": "Cannot connect to backend. Make sure the server is running."}
+    except requests.Timeout:
+        return {"error": "Upload timed out. The document may be too large to process."}
+    except Exception as e:
+        return {"error": f"Unexpected error: {str(e)}"}
+
+
+def list_documents(exam: str = None) -> list:
+    """Fetch list of uploaded documents."""
+    url = f"{BACKEND_URL}/api/documents"
+    params = {}
+    if exam:
+        params["exam"] = exam
+    try:
+        response = requests.get(url, params=params, timeout=10)
+        response.raise_for_status()
+        return response.json()
+    except Exception as e:
+        logger.warning(f"Failed to fetch documents: {e}")
+        return []
+
+
+def delete_document(doc_id: str) -> dict:
+    """Delete an uploaded document."""
+    url = f"{BACKEND_URL}/api/documents/{doc_id}"
+    try:
+        response = requests.delete(url, timeout=30)
+        response.raise_for_status()
+        return response.json()
+    except requests.HTTPError as e:
+        try:
+            detail = e.response.json().get("detail", str(e))
+        except Exception:
+            detail = str(e)
+        return {"error": detail}
+    except Exception as e:
+        return {"error": f"Unexpected error: {str(e)}"}
+

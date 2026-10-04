@@ -5,7 +5,7 @@ import logging
 
 from .config import DEBUG_MODE, ENVIRONMENT, LOG_LEVEL
 from .database import init_db
-from .routers import query, exams, feedback
+from .routers import query, exams, feedback, documents
 from .services import vector_store
 
 logging.basicConfig(
@@ -64,6 +64,7 @@ app.add_middleware(
 app.include_router(query.router)
 app.include_router(exams.router)
 app.include_router(feedback.router)
+app.include_router(documents.router)
 
 
 @app.get("/")
