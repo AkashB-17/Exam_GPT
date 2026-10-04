@@ -277,8 +277,8 @@ def inject_custom_css():
     /* ===== Text area styling ===== */
     .stTextArea textarea {
         border-radius: 12px !important;
-        border: 1px solid rgba(255, 255, 255, 0.1) !important;
-        background: rgba(30, 30, 46, 0.5) !important;
+        border: 1px solid rgba(128, 128, 128, 0.25) !important;
+        background: transparent !important;
         font-family: 'Inter', sans-serif !important;
         font-size: 0.95rem !important;
         padding: 1rem !important;
